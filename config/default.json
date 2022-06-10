@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://obonyo:1234567890@developer-social.w1n0c.mongodb.net/?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://obonyo:1234567890@developer-social.w1n0c.mongodb.net/?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
 }

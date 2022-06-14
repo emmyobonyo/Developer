@@ -1,3 +1,6 @@
+
+// We need a middleware to verify our jsonwebtoken that comes from the client so that we can
+// authenticate our users
 const jwt = require('jsonwebtoken')
 const config = require('config')
 

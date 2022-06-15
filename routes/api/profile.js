@@ -53,7 +53,7 @@ router.post('/', [
   } = req.body
 
   //Build profile object
-  const profileFields = []
+  const profileFields = {}
   profileFields.user = req.user.id
   if(company) profileFields.company = company
   if(website) profileFields.website = website
@@ -73,10 +73,11 @@ router.post('/', [
   if (facebook) profileFields.social.facebook = facebook
   if (linkedin) profileFields.social.linkedin = linkedin
   if (instagram) profileFields.social.instagram = instagram
-  console.log(profileFields.social)
+  // console.log(profileFields)
   
   try {
     let profile = await Profile.findOne({ user: req.user.id })
+    // console.log(`profile + ${profile}`)
 
     if (profile) {
       //Update Profile

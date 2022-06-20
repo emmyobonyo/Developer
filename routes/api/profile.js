@@ -280,4 +280,6 @@ router.delete('/education/:edu_id', auth, async(req, res) => {
   }
 })
 
+// Just trying to keep my streak on point.
+
 module.exports = router
